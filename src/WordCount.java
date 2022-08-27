@@ -46,6 +46,7 @@ public class WordCount {
       try {
         HashMap<String, Integer> hashMap = wordCountWebside(searchWords);
 
+        // keySet returns a set view of the keys
         for (String sKey : hashMap.keySet()) {
           System.out.println("Ord fundet: " + sKey + " " + hashMap.get(sKey) + " gange");
         }
